@@ -1,0 +1,23 @@
+{
+	"name": "poKrypto",
+	"version": "1.0.0",
+	"description": "",
+	"main": "truffle.js",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"dev": "lite-server",
+		"compile": "truffle compile",
+		"migrate": "truffle migrate",
+		"test": "truffle test"
+	},
+	"author": "nacimgoura",
+	"license": "ISC",
+	"dependencies": {
+		"truffle": "^4.1.11"
+	},
+	"devDependencies": {
+		"lite-server": "^2.3.0"
+	}
+}

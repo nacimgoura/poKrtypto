@@ -1,0 +1,433 @@
+[
+	{
+		"id": 1,
+		"name": "Bulbizarre",
+		"picture": "images/1.png",
+		"life": 30,
+		"attack": 6,
+		"quantity": 30
+	},
+
+	{
+		"id": 2,
+		"name": "Herbizarre",
+		"picture": "images/2.png",
+		"life": 100,
+		"attack": 12,
+		"quantity": 10
+	},
+
+	{
+		"id": 3,
+		"name": "Florizarre",
+		"picture": "images/3.png",
+		"life": 200,
+		"attack": 24,
+		"quantity": 2
+	},
+
+	{
+		"id": 4,
+		"name": "Salameche",
+		"picture": "images/4.png",
+		"life": 28,
+		"attack": 8,
+		"quantity": 30
+	},
+
+	{
+		"id": 5,
+		"name": "Reptincel",
+		"picture": "images/5.png",
+		"life": 90,
+		"attack": 16,
+		"quantity": 10
+	},
+
+	{
+		"id": 6,
+		"name": "Dracaufeu",
+		"picture": "images/6.png",
+		"life": 170,
+		"attack": 32,
+		"quantity": 2
+	},
+
+	{
+		"id": 7,
+		"name": "Carapuce",
+		"picture": "images/7.png",
+		"life": 24,
+		"attack": 8,
+		"quantity": 30
+	},
+
+	{
+		"id": 8,
+		"name": "Carabaffe",
+		"picture": "images/8.png",
+		"life": 100,
+		"attack": 12,
+		"quantity": 10
+	},
+
+	{
+		"id": 9,
+		"name": "Tortank",
+		"picture": "images/9.png",
+		"life": 220,
+		"attack": 20,
+		"quantity": 2
+	},
+
+	{
+		"id": 10,
+		"name": "Chenipan",
+		"picture": "images/10.png",
+		"life": 18,
+		"attack": 4,
+		"quantity": 70
+	},
+
+	{
+		"id": 11,
+		"name": "Chrysacier",
+		"picture": "images/11.png",
+		"life": 56,
+		"attack": 4,
+		"quantity": 30
+	},
+
+	{
+		"id": 12,
+		"name": "Papilusion",
+		"picture": "images/12.png",
+		"life": 112,
+		"attack": 16,
+		"quantity": 10
+	},
+
+	{
+		"id": 13,
+		"name": "Aspicot",
+		"picture": "images/13.png",
+		"life": 10,
+		"attack": 4,
+		"quantity": 70
+	},
+
+	{
+		"id": 14,
+		"name": "Coconfort",
+		"picture": "images/14.png",
+		"life": 30,
+		"attack": 5,
+		"quantity": 30
+	},
+
+	{
+		"id": 15,
+		"name": "Dardargnan",
+		"picture": "images/15.png",
+		"life": 90,
+		"attack": 18,
+		"quantity": 10
+	},
+
+	{
+		"id": 16,
+		"name": "Roucool",
+		"picture": "images/16.png",
+		"life": 18,
+		"attack": 5,
+		"quantity": 150
+	},
+
+	{
+		"id": 17,
+		"name": "Roucoups",
+		"picture": "images/17.png",
+		"life": 45,
+		"attack": 10,
+		"quantity": 40
+	},
+
+	{
+		"id": 18,
+		"name": "Roucarnage",
+		"picture": "images/18.png",
+		"life": 110,
+		"attack": 19,
+		"quantity": 20
+	},
+
+	{
+		"id": 29,
+		"name": "Nidoran F",
+		"picture": "images/29.png",
+		"life": 22,
+		"attack": 3,
+		"quantity": 40
+	},
+
+	{
+		"id": 30,
+		"name": "Nidorina",
+		"picture": "images/30.png",
+		"life": 46,
+		"attack": 8,
+		"quantity": 20
+	},
+
+	{
+		"id": 31,
+		"name": "Nidoqueen",
+		"picture": "images/31.png",
+		"life": 105,
+		"attack": 14,
+		"quantity": 5
+	},
+
+	{
+		"id": 32,
+		"name": "Nidoran M",
+		"picture": "images/32.png",
+		"life": 23,
+		"attack": 3,
+		"quantity": 40
+	},
+
+	{
+		"id": 33,
+		"name": "Nidorino",
+		"picture": "images/33.png",
+		"life": 48,
+		"attack": 8,
+		"quantity": 20
+	},
+
+	{
+		"id": 34,
+		"name": "Nidoking",
+		"picture": "images/34.png",
+		"life": 130,
+		"attack": 14,
+		"quantity": 5
+	},
+
+	{
+		"id": 43,
+		"name": "Mysterbe",
+		"picture": "images/43.png",
+		"life": 22,
+		"attack": 4,
+		"quantity": 60
+	},
+
+	{
+		"id": 44,
+		"name": "Ortide",
+		"picture": "images/44.png",
+		"life": 44,
+		"attack": 12,
+		"quantity": 40
+	},
+
+	{
+		"id": 45,
+		"name": "Rafflesia",
+		"picture": "images/15.png",
+		"life": 130,
+		"attack": 17,
+		"quantity": 3
+	},
+
+	{
+		"id": 60,
+		"name": "Ptitard",
+		"picture": "images/60.png",
+		"life": 24,
+		"attack": 6,
+		"quantity": 90
+	},
+
+	{
+		"id": 61,
+		"name": "Tetarte",
+		"picture": "images/61.png",
+		"life": 56,
+		"attack": 10,
+		"quantity": 20
+	},
+
+	{
+		"id": 62,
+		"name": "Tartard",
+		"picture": "images/63.png",
+		"life": 98,
+		"attack": 22,
+		"quantity": 3
+	},
+
+	{
+		"id": 63,
+		"name": "Abra",
+		"picture": "images/63.png",
+		"life": 18,
+		"attack": 8,
+		"quantity": 60
+	},
+
+	{
+		"id": 64,
+		"name": "Kadabra",
+		"picture": "images/64.png",
+		"life": 36,
+		"attack": 14,
+		"quantity": 50
+	},
+
+	{
+		"id": 65,
+		"name": "Alakazam",
+		"picture": "images/65.png",
+		"life": 78,
+		"attack": 28,
+		"quantity": 2
+	},
+
+	{
+		"id": 66,
+		"name": "Machoc",
+		"picture": "images/66.png",
+		"life": 24,
+		"attack": 6,
+		"quantity": 70
+	},
+
+	{
+		"id": 67,
+		"name": "Machopeur",
+		"picture": "images/67.png",
+		"life": 50,
+		"attack": 12,
+		"quantity": 50
+	},
+
+	{
+		"id": 68,
+		"name": "Mackogneur",
+		"picture": "images/68.png",
+		"life": 100,
+		"attack": 24,
+		"quantity": 4
+	},
+
+	{
+		"id": 69,
+		"name": "Chetiflor",
+		"picture": "images/69.png",
+		"life": 18,
+		"attack": 4,
+		"quantity": 80
+	},
+
+	{
+		"id": 70,
+		"name": "Boustiflor",
+		"picture": "images/70.png",
+		"life": 60,
+		"attack": 8,
+		"quantity": 30
+	},
+
+	{
+		"id": 71,
+		"name": "Empiflor",
+		"picture": "images/71.png",
+		"life": 140,
+		"attack": 13,
+		"quantity": 2
+	},
+
+	{
+		"id": 74,
+		"name": "Racaillou",
+		"picture": "images/74.png",
+		"life": 32,
+		"attack": 2,
+		"quantity": 300
+	},
+
+	{
+		"id": 75,
+		"name": "Gravalanch",
+		"picture": "images/75.png",
+		"life": 110,
+		"attack": 5,
+		"quantity": 150
+	},
+
+	{
+		"id": 76,
+		"name": "Grolem",
+		"picture": "images/76.png",
+		"life": 230,
+		"attack": 7,
+		"quantity": 3
+	},
+
+	{
+		"id": 92,
+		"name": "Fantominus",
+		"picture": "images/92.png",
+		"life": 12,
+		"attack": 10,
+		"quantity": 100
+	},
+
+	{
+		"id": 93,
+		"name": "Spectrum",
+		"picture": "images/93.png",
+		"life": 28,
+		"attack": 20,
+		"quantity": 70
+	},
+
+	{
+		"id": 94,
+		"name": "Ectoplasma",
+		"picture": "images/94.png",
+		"life": 78,
+		"attack": 30,
+		"quantity": 2
+	},
+
+	{
+		"id": 147,
+		"name": "Minidraco",
+		"picture": "images/147.png",
+		"life": 18,
+		"attack": 4,
+		"quantity": 5
+	},
+
+	{
+		"id": 148,
+		"name": "Draco",
+		"picture": "images/148.png",
+		"life": 32,
+		"attack": 8,
+		"quantity": 2
+	},
+
+	{
+		"id": 149,
+		"name": "Dracolosse",
+		"picture": "images/149.png",
+		"life": 180,
+		"attack": 42,
+		"quantity": 1
+	}
+]
