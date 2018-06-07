@@ -14,10 +14,6 @@ contract Capture {
     modifier checkIfBelong(uint _pokemonId) {
          // check if pokemon exist
         require(_pokemonId >= 1 && _pokemonId <= 47);
-        // check if dresser has not already pokemon
-        require(pokemonByDresser[msg.sender] == 0);
-        // check if pokemon has not already dresser
-        require(pokemons[_pokemonId - 1] == 0);
         _;
     }
 
@@ -25,12 +21,16 @@ contract Capture {
         catch pokemon if it doesn't belong to anyone
      */
     function catchPokemon(uint _pokemonId) public payable checkIfBelong(_pokemonId) returns (uint) {
+        // check if dresser has not already pokemon
+        require(pokemonByDresser[msg.sender] == 0);
+        // check if pokemon has not already dresser
+        require(pokemons[_pokemonId - 1] == 0);
         // check if transaction has a price
-        // uint price = calculatePrice(_pokemonId);
-        require(msg.value == 3 ether);
+        uint price = calculatePrice(_pokemonId);
+        require(msg.value == price * 1 ether);
         
         // affect pokemon at dresser
-        pokemonByDresser[msg.sender] = _pokemonId - 1;
+        pokemonByDresser[msg.sender] = _pokemonId;
         // affect dresser at pokemon
         pokemons[_pokemonId - 1] = msg.sender;
         return _pokemonId - 1;
@@ -41,11 +41,9 @@ contract Capture {
     */
     function releasePokemon(uint _pokemonId) public checkIfBelong(_pokemonId) payable returns (uint) {
         pokemonByDresser[msg.sender] = 0;
-        // affect dresser at pokemon
+        // desaffect dresser at pokemon
         pokemons[_pokemonId - 1] = 0;
-
-        // address(this).transfer(msg.sender, msg.value);
-
+        msg.sender.transfer(5 ether);
         return _pokemonId;
     }
 

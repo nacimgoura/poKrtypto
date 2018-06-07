@@ -162,7 +162,7 @@
 	},
 
 	{
-		"id": 29,
+		"id": 19,
 		"name": "Nidoran F",
 		"picture": "images/29.png",
 		"life": 22,
@@ -171,7 +171,7 @@
 	},
 
 	{
-		"id": 30,
+		"id": 20,
 		"name": "Nidorina",
 		"picture": "images/30.png",
 		"life": 46,
@@ -180,7 +180,7 @@
 	},
 
 	{
-		"id": 31,
+		"id": 21,
 		"name": "Nidoqueen",
 		"picture": "images/31.png",
 		"life": 105,
@@ -189,7 +189,7 @@
 	},
 
 	{
-		"id": 32,
+		"id": 22,
 		"name": "Nidoran M",
 		"picture": "images/32.png",
 		"life": 23,
@@ -198,7 +198,7 @@
 	},
 
 	{
-		"id": 33,
+		"id": 23,
 		"name": "Nidorino",
 		"picture": "images/33.png",
 		"life": 48,
@@ -207,7 +207,7 @@
 	},
 
 	{
-		"id": 34,
+		"id": 24,
 		"name": "Nidoking",
 		"picture": "images/34.png",
 		"life": 130,
@@ -216,7 +216,7 @@
 	},
 
 	{
-		"id": 43,
+		"id": 25,
 		"name": "Mysterbe",
 		"picture": "images/43.png",
 		"life": 22,
@@ -225,7 +225,7 @@
 	},
 
 	{
-		"id": 44,
+		"id": 26,
 		"name": "Ortide",
 		"picture": "images/44.png",
 		"life": 44,
@@ -234,7 +234,7 @@
 	},
 
 	{
-		"id": 45,
+		"id": 27,
 		"name": "Rafflesia",
 		"picture": "images/15.png",
 		"life": 130,
@@ -243,7 +243,7 @@
 	},
 
 	{
-		"id": 60,
+		"id": 28,
 		"name": "Ptitard",
 		"picture": "images/60.png",
 		"life": 24,
@@ -252,7 +252,7 @@
 	},
 
 	{
-		"id": 61,
+		"id": 29,
 		"name": "Tetarte",
 		"picture": "images/61.png",
 		"life": 56,
@@ -261,7 +261,7 @@
 	},
 
 	{
-		"id": 62,
+		"id": 20,
 		"name": "Tartard",
 		"picture": "images/63.png",
 		"life": 98,
@@ -270,7 +270,7 @@
 	},
 
 	{
-		"id": 63,
+		"id": 41,
 		"name": "Abra",
 		"picture": "images/63.png",
 		"life": 18,
@@ -279,7 +279,7 @@
 	},
 
 	{
-		"id": 64,
+		"id": 42,
 		"name": "Kadabra",
 		"picture": "images/64.png",
 		"life": 36,
@@ -288,7 +288,7 @@
 	},
 
 	{
-		"id": 65,
+		"id": 43,
 		"name": "Alakazam",
 		"picture": "images/65.png",
 		"life": 78,
@@ -297,7 +297,7 @@
 	},
 
 	{
-		"id": 66,
+		"id": 44,
 		"name": "Machoc",
 		"picture": "images/66.png",
 		"life": 24,
@@ -306,7 +306,7 @@
 	},
 
 	{
-		"id": 67,
+		"id": 45,
 		"name": "Machopeur",
 		"picture": "images/67.png",
 		"life": 50,
@@ -315,7 +315,7 @@
 	},
 
 	{
-		"id": 68,
+		"id": 46,
 		"name": "Mackogneur",
 		"picture": "images/68.png",
 		"life": 100,
@@ -324,7 +324,7 @@
 	},
 
 	{
-		"id": 69,
+		"id": 47,
 		"name": "Chetiflor",
 		"picture": "images/69.png",
 		"life": 18,
@@ -333,7 +333,7 @@
 	},
 
 	{
-		"id": 70,
+		"id": 48,
 		"name": "Boustiflor",
 		"picture": "images/70.png",
 		"life": 60,
@@ -342,7 +342,7 @@
 	},
 
 	{
-		"id": 71,
+		"id": 49,
 		"name": "Empiflor",
 		"picture": "images/71.png",
 		"life": 140,
@@ -351,7 +351,7 @@
 	},
 
 	{
-		"id": 74,
+		"id": 50,
 		"name": "Racaillou",
 		"picture": "images/74.png",
 		"life": 32,

@@ -13,8 +13,9 @@ App = {
 				pokemonTemplate.find('img').attr('src', data[i].picture);
 				pokemonTemplate.find('.pokemon-life').text(data[i].life);
 				pokemonTemplate.find('.pokemon-attack').text(data[i].attack);
-				pokemonTemplate.find('.btn-capture').attr('data-id', data[i].id);
-				pokemonTemplate.find('.pokemon-price').text(calculatePrice(data[i].id));
+				pokemonTemplate.find('.btn-capture').attr('data-id', i + 1);
+				pokemonTemplate.find('.btn-release').attr('data-id', i + 1);
+				pokemonTemplate.find('.pokemon-price').text(calculatePrice(i + 1));
 
 				pokemonsRow.append(pokemonTemplate.html());
 			}
@@ -95,6 +96,18 @@ App = {
 									.removeClass('btn-primary')
 									.attr('disabled', true);
 							}
+						} else {
+							$('.panel-pokemon')
+								.eq(i)
+								.find('.btn-capture')
+								.text('Capturer')
+								.removeClass('hidden btn-default')
+								.addClass('btn-primary')
+								.attr('disabled', false);
+							$('.panel-pokemon')
+								.eq(i)
+								.find('.btn-release')
+								.addClass('hidden');
 						}
 					}
 				})
@@ -123,7 +136,7 @@ App = {
 					return instance.catchPokemon(pokemonId, {
 						from: account,
 						value: web3.toWei(price),
-						gas: 21000 * price
+						gas: 1000000
 					});
 				})
 				.then(function(result) {
@@ -151,10 +164,10 @@ App = {
 			var account = accounts[0];
 			App.contracts.Capture.deployed()
 				.then(function(instance) {
+					console.log(pokemonId);
 					// Execute capture as a transaction by sending account
 					return instance.releasePokemon(pokemonId, {
-						from: account,
-						gas: 21000
+						from: account
 					});
 				})
 				.then(function(result) {
