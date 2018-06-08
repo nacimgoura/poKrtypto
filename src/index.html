@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>poKrypto</title>
+    <title>PoKrypto</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/sweetalert2"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,11 +26,18 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-8 col-sm-push-2">
-          <h1 class="text-center">poKrypto - Pokemon Blockchain</h1>
+          <h1 class="text-center">PoKrypto - Pokemon Blockchain</h1>
           <hr/>
           <br/>
         </div>
       </div>
+
+      <h4 class="text-center">
+        Un seul et unique pokémon peut être capturé. Si vous en avez déjà un et souhaitez en capturer un autre il faudra libérer
+        celui que vous avez déjà.
+      </h4>
+
+      <hr>
 
       <div id="pokemonRow" class="row">
         <!-- PETS LOAD HERE -->
@@ -58,6 +67,7 @@
             <br/>
             <button class="btn btn-danger btn-release hidden" type="button" data-id="0">Release</button>
             <button class="btn btn-primary btn-capture" type="button" data-id="0">Capture</button>
+            <button class="btn btn-success btn-battle" type="button" data-id="0">Combat</button>
           </div>
         </div>
       </div>

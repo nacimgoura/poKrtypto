@@ -6,3 +6,7 @@
 h1 {
 	font-family: 'Pokemon Hollow';
 }
+
+.swal2-popup .swal2-content {
+	font-size: 2em !important;
+}

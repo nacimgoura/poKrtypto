@@ -70,4 +70,9 @@ contract Capture {
         return price;
     }
 
+    // battle between to pokemon
+    function battle() external payable {
+
+    }
+
 }

@@ -15,6 +15,7 @@ App = {
 				pokemonTemplate.find('.pokemon-attack').text(data[i].attack);
 				pokemonTemplate.find('.btn-capture').attr('data-id', i + 1);
 				pokemonTemplate.find('.btn-release').attr('data-id', i + 1);
+				pokemonTemplate.find('.btn-battle').attr('data-id', i + 1);
 				pokemonTemplate.find('.pokemon-price').text(calculatePrice(i + 1));
 
 				pokemonsRow.append(pokemonTemplate.html());
@@ -57,6 +58,7 @@ App = {
 	bindEvents: function() {
 		$(document).on('click', '.btn-capture', App.handleCapture);
 		$(document).on('click', '.btn-release', App.handleRelease);
+		$(document).on('click', '.btn-battle', App.battle);
 	},
 
 	markCaptured: function() {
@@ -66,6 +68,7 @@ App = {
 			}
 
 			var account = accounts[0];
+
 			App.contracts.Capture.deployed()
 				.then(function(instance) {
 					captureInstance = instance;
@@ -73,7 +76,6 @@ App = {
 					return instance.getPokemons.call();
 				})
 				.then(function(pokemons) {
-					console.log(pokemons);
 					for (i = 0; i < pokemons.length; i++) {
 						if (pokemons[i] !== '0x0000000000000000000000000000000000000000') {
 							if (pokemons[i] === account) {
@@ -112,7 +114,7 @@ App = {
 					}
 				})
 				.catch(function(err) {
-					console.log(err.message);
+					swal('Erreur', err.message, 'error');
 				});
 		});
 	},
@@ -130,22 +132,35 @@ App = {
 			var price = calculatePrice(pokemonId);
 
 			var account = accounts[0];
-			App.contracts.Capture.deployed()
-				.then(function(instance) {
-					// Execute capture as a transaction by sending account
-					return instance.catchPokemon(pokemonId, {
-						from: account,
-						value: web3.toWei(price),
-						gas: 1000000
-					});
-				})
-				.then(function(result) {
-					console.log(result);
-					return App.markCaptured();
-				})
-				.catch(function(err) {
-					console.log(err.message);
-				});
+
+			swal({
+				title: 'Capture de pokemon',
+				text: 'Voulez-vous vraiment capturer ce pokémon ?',
+				type: 'warning',
+				showCancelButton: true,
+				confirmButtonColor: '#3085d6',
+				cancelButtonColor: '#d33',
+				confirmButtonText: 'Oui!'
+			}).then(function(result) {
+				if (result.value) {
+					App.contracts.Capture.deployed()
+						.then(function(instance) {
+							// Execute capture as a transaction by sending account
+							return instance.catchPokemon(pokemonId, {
+								from: account,
+								value: web3.toWei(price),
+								gas: 1000000
+							});
+						})
+						.then(function(result) {
+							swal('Bravo!', 'Pokémon capturé!', 'success');
+							return App.markCaptured();
+						})
+						.catch(function(err) {
+							swal('Erreur', err.message, 'error');
+						});
+				}
+			});
 		});
 	},
 
@@ -162,23 +177,38 @@ App = {
 			var price = calculatePrice(pokemonId);
 
 			var account = accounts[0];
-			App.contracts.Capture.deployed()
-				.then(function(instance) {
-					console.log(pokemonId);
-					// Execute capture as a transaction by sending account
-					return instance.releasePokemon(pokemonId, {
-						from: account
-					});
-				})
-				.then(function(result) {
-					console.log(result);
-					return App.markCaptured();
-				})
-				.catch(function(err) {
-					console.log(err.message);
-				});
+
+			swal({
+				title: 'Capture de pokemon',
+				text: 'Voulez-vous vraiment libérer ce pokémon ?',
+				type: 'warning',
+				showCancelButton: true,
+				confirmButtonColor: '#3085d6',
+				cancelButtonColor: '#d33',
+				confirmButtonText: 'Oui!'
+			}).then(function(result) {
+				if (result.value) {
+					App.contracts.Capture.deployed()
+						.then(function(instance) {
+							console.log(pokemonId);
+							// Execute capture as a transaction by sending account
+							return instance.releasePokemon(pokemonId, {
+								from: account
+							});
+						})
+						.then(function(result) {
+							swal('Bravo!', 'Pokémon relaché!', 'success');
+							return App.markCaptured();
+						})
+						.catch(function(err) {
+							console.log(err.message);
+						});
+				}
+			});
 		});
-	}
+	},
+
+	battle: function(event) {}
 };
 
 $(function() {
